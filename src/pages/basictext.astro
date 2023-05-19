@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+  </head>
+  <body>
+    <script>
+      import * as PIXI from 'pixi.js';
+      const app = new PIXI.Application<HTMLCanvasElement>({
+        background: '#1099bb',
+      });
+      document.body.appendChild(app.view);
+
+      const basicText = new PIXI.Text('Basic text in pixi');
+      basicText.x = 50;
+      basicText.y = 100;
+
+      app.stage.addChild(basicText);
+    </script>
+  </body>
+</html>
